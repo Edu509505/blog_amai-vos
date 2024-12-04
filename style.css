@@ -1,0 +1,1367 @@
+* {
+    margin: 0;
+    font-family: "Caliibri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(05, 05, 05);
+}
+
+/*.apresentacao{
+    display: flex;
+    justify-content: center;
+    margin: 0px 10%;
+}*/
+
+.logog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('./video/intro.mp4');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    transition: transform 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button>img {
+    width: 60px;
+}
+
+.button>h1 {
+    font-weight: 500;
+    margin: 0 1rem 0 1rem;
+}
+
+.linha-nav {
+    width: 0.2rem;
+    height: 3rem;
+    background-color: white;
+}
+
+nav>a {
+    margin: 0 2% 0 2%;
+    text-decoration: none;
+    color: white;
+    transition: transform 200ms;
+}
+
+nav>a:hover {
+    transform: scale(1.1);
+}
+
+.efeito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.efeito>img {
+    margin: 3rem 5rem 0 5rem;
+    width: 235px;
+    height: 400px;
+    filter: drop-shadow(1px 1px 5px black)
+}
+
+.fru1 {
+    background-color: white;
+    height: 20rem;
+    width: 5px
+}
+
+.efeito>h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 5rem 0 5rem;
+}
+
+.degrade {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 2) 0%, rgba(0, 0, 0, 0.50) 100%, rgb(10, 10, 10, 2) 100%);
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    flex-direction: column;
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.conteudopaisobre {
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.iconesobre {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 3rem;
+}
+
+.iconesobre>img {
+    width: 70%;
+    height: 70%;
+    /*filter: drop-shadow(1px 1px 5px rgb(255, 0, 0))
+            drop-shadow(-1px -1px 6px rgb(255, 0, 0))
+            drop-shadow(-1px -1px 7px rgb(255, 0, 0))
+            drop-shadow(-1px -1px 8px rgb(255, 0, 0))
+*/
+}
+
+.iconesobre2 {
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 3rem;
+}
+
+.iconesobre2>img {
+    width: 70%;
+    height: 70%;
+}
+
+.part2 {
+    display: block;
+    margin: 5% 5% 0;
+    text-align: center;
+}
+
+.part2>h1 {
+    margin: 3rem;
+}
+
+.cardpai {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*CARDS*/
+
+.card {
+    width: 190px;
+    height: 330px;
+    background-color: rgb(25, 25, 25);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: blue;
+    transition: 200ms;
+}
+
+.card>img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    image-rendering: optimizeSpeed;
+}
+
+.iconecard {
+    border-radius: 100%;
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 1px 1px 6px black;
+    margin: 10% 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 200ms;
+}
+
+.icone {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card:hover {
+    transition: 200ms;
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 255)) drop-shadow(0 0 0.55rem rgb(0, 0, 255));
+
+    .iconecard {
+        animation: iconeAtivo 2.5s infinite;
+        transition: 200ms;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+    }
+
+}
+
+@keyframes iconeAtivo {
+    50% {
+        filter: drop-shadow(0 0 0.2rem rgb(255, 255, 255)) drop-shadow(0 0 0.2rem rgb(255, 255, 255)) drop-shadow(0 0 0.25rem rgb(255, 150, 255)) drop-shadow(0 0 0.3rem rgb(255, 0, 255));
+
+
+    }
+}
+
+
+/*CARDS*/
+
+.imgpart3 {
+    background-image: url('./img/Vocalistas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: mudancadeimagem 120s infinite;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+
+}
+
+@keyframes mudancadeimagem {
+    10% {
+        background-image: url('./img/banner/IMG_0069.jpg');
+    }
+
+    20% {
+        background-image: url('./img/banner/IMG_0083.jpg');
+
+    }
+
+    30% {
+        background-image: url('./img/banner/IMG_0158.jpg');
+
+    }
+
+    40% {
+        background-image: url('./img/banner/Mavi-e-Ryan.jpg');
+
+    }
+
+    50% {
+        background-image: url('./img/banner/IMG_0197.jpg');
+
+    }
+
+    60% {
+        background-image: url('./img/banner/IMG_0236.jpg');
+
+    }
+
+    70% {
+        background-image: url('./img/banner/Matheus-e-Eduardo-_1_.jpg');
+
+    }
+
+    80% {
+        background-image: url('./img/banner/Vocalistas-III.jpg');
+
+    }
+
+    90% {
+        background-image: url('./img/banner/Mavi-III.jpg');
+
+    }
+}
+
+.degradesuperior {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10) 100%, rgb(10, 10, 10, 1) 50%);
+    height: 3rem;
+    width: 100%;
+
+}
+
+.filtroresponsivo {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.4);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filtroresponsivo>h1 {
+    margin: 3rem 0;
+}
+
+.tabela {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(0.3rem);
+    /* box-shadow: 0 0 10px black; */
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.filtroresponsivo>a {
+    width: 80%;
+    /*height:60px;*/
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.tabela:hover {
+    transform: scale(1.02);
+    transition: 200ms;
+}
+
+.tabela>h3 {
+    text-align: start;
+    margin: 1rem;
+}
+
+.tabela>div {
+    background-color: rgb(1, 107, 255);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.tabela>div>h4 {
+    margin: 0.5rem;
+}
+
+.degradeinerior {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0.4) 100%, rgb(10, 10, 10, 1) 50%);
+    height: 3rem;
+    width: 100%;
+}
+
+/*Final*/
+
+.part4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postpai {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.textofiltro {
+    margin: 0;
+}
+
+.post,
+.post2,
+.post3 {
+    transition: 200ms;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.post {
+    background-image: url('./img/post/pedrolessa.png');
+}
+
+.post2 {
+    background-image: url('./img/post/UAWEEK.png');
+}
+
+.post3 {
+    background-image: url('./img/post/14JUL.png');
+}
+
+.filtropost {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    transition: color, background-color 200ms;
+}
+
+.filtropost:hover {
+    background-color: rgba(0, 0, 0, 0.736);
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.iconesfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.instagramfooter,.linkedinfooter{
+    width: 70px;
+    margin: 1rem;
+    transition: transform 200ms;
+}
+
+.instagramfooter:hover,.linkedinfooter:hover{
+    transform:scale(1.05);
+}
+
+/* footer>img{
+    width: 300px;
+}
+
+.conteudofooter{
+    margin:1rem 0;
+}
+
+textarea,input{
+    width: 90%;
+    border-radius: 5px;
+}
+
+.conteudofooter>a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:1rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+button{
+    border-radius: 5px;
+} */
+
+
+
+/* INTEGRANTES */
+
+.bodyintegrantes {
+    color: white;
+}
+
+.integrantesestilizacao {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    text-align: center;
+}
+
+.integrantes>h1,
+h2 {
+    margin: 1rem;
+}
+
+.cardintegrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*INDEX INTEGRANTES*/
+
+.cubo1>h1 {
+    margin: 3rem;
+    text-align: center;
+}
+
+.cubo1>img {
+    border-radius: 50%;
+    width: 250px;
+    image-rendering: optimizeQuality;
+}
+
+.cubo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 0 0 5%;
+}
+
+.faixa {
+    margin: 0 0.5rem;
+    width: 5px;
+}
+
+.cubo2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 50%;
+    margin: 0 5% 0 0;
+}
+
+.cubo2>h1,
+h2 {
+    margin: 0 1rem;
+}
+
+.iconespai {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.iconeintegrates {
+    width: 120px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.iconeintegrates>h3 {
+    margin: 1rem;
+}
+
+/*VARIÁVEIS*/
+
+:root {
+    --tamanho-icone: 80px;
+    --clicou: scale(0.9)
+}
+
+/*CARD MATHEUS*/
+
+.cardmatheuspai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconematheus {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+.iconeintegrantes1 {
+    background-image: url('./img/icone/guitarra-eletrica.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.iconeintegrantes2 {
+    background-image: url('./img/icone/lideranca.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*CARD ABIGAIL*/
+
+
+.cardabigailpai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconeintegrantes1canto {
+    background-image: url('./img/icone/microfone-com-fio.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.iconeintegrantes3 {
+    background-image: url('./img/icone/organizar.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*CARD BIA*/
+
+.cardbiapai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconeintegrantes2fundadora {
+    background-image: url('./img/icone/ide.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*PAULO QUARESMA*/
+
+.cardpaulopai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*KAROLYNE FERNANDES*/
+
+.cardkarolpai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*MARIA VITÓRIA*/
+
+.cardmavipai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconeintegrantes1teclado {
+    background-image: url('./img/icone/piano.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* RYAN MOTA*/
+
+.cardryanpai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconeintegrantes1bateria {
+    background-image: url('./img/icone/drum.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* EDUARDO NASCIMENTO */
+
+.cardedupai {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconeintegrantes1baixo {
+    background-image: url('./img/icone/contra-baixo-eletrico.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.iconeintegrantes1preparadorvocal {
+    background-image: url('./img/icone/professor.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.iconeintegrantes1dev {
+    background-image: url('./img/icone/lupa.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: var(--tamanho-icone);
+    height: var(--tamanho-icone);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+    display: none;
+    border: 20px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+.go-top>div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('./img/icone/direito.png');
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center;
+    transform: rotate(-90deg);
+}
+
+.go-top:hover {
+    transform: scale(1.1);
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.inicio>h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 3rem 1rem;
+}
+
+:root {
+    --tamanho-icone-noticia: 80px;
+}
+
+.iconenoticias {
+    width: var(--tamanho-icone-noticia);
+    height: var(--tamanho-icone-noticia);
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('./img/icone/megafone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.iconenoticias2 {
+    width: var(--tamanho-icone-noticia);
+    height: var(--tamanho-icone-noticia);
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('./img/icone/megafone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    transform: scaleX(-1);
+}
+
+.noticias {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noticia1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    background-image: url('./img/WhatsApp Image 2024-10-19 at 23.45.27.jpeg');
+    background-position: 100%;
+}
+
+.noticia1>h1,
+h2 {
+    margin: 0;
+}
+
+.noticia1>img {
+    width: 300px;
+    height: 300px;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    padding: 10% 5%;
+}
+
+.part1>h1 {
+    font-weight: bold;
+}
+
+.part1-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 5% 25%;
+    text-align: center;
+}
+
+.liderrerional {
+    text-align: center;
+    margin: 1rem;
+}
+
+.regina {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(43, 172, 0);
+}
+
+.noticia2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    background-image: url('./img/banner/Matheus-e-Eduardo-_1_.jpg');
+}
+
+.part2>h1,
+h2 {
+    margin: 0;
+}
+
+.noticiaspart2>img {
+    width: 300px;
+    height: 300px;
+}
+
+.noticiaspart2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    padding: 10% 5%;
+    margin: 0;
+}
+
+.noticiaspart2>h1,
+strong {
+    font-weight: bold;
+}
+
+.noticia3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    /*background-image: url('./img/banner/IMG_0083.jpg');*/
+}
+
+.part3>h1,
+h2 {
+    margin: 0;
+}
+
+.noticiaspart3>img {
+    width: 300px;
+    height: 300px;
+}
+
+.noticiaspart3 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    padding: 10% 5%;
+    margin: 0;
+}
+
+.noticiaspart3>h1,
+strong {
+    font-weight: bold;
+}
+
+.imagensnoticas3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+}
+
+.imagensnoticas3>img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.noticia4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    background-image: url('./img/banner/IMG_0197.jpg');
+}
+
+.noticiaspart4 {
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 10% 5%;
+    text-align: left;
+}
+
+.noticiaspart4>h1,
+strong {
+    font-weight: bold;
+}
+
+/* SOBRE MIM */
+
+.introducaosobremim {
+    background-color: rgb(05, 05, 05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+    text-align: center;
+
+}
+
+.introducaosobremim>img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.introducaosobremim>h1,
+h2 {
+    margin: 3rem 0;
+
+}
+
+.meuinteressepai {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+
+
+.cardmeuinteresse {
+    width: 50%;
+    height: 14rem;
+    /*margin: 0.1rem;*/
+    transition: width 200ms;
+}
+
+.cardmeuinteresse:hover {
+    width: 60%;
+}
+
+.cardmeuinteresse>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.imgagemcardmenuinteresse1,
+.imgagemcardmenuinteresse2,
+.imgagemcardmenuinteresse3,
+.imgagemcardmenuinteresse4,
+.imgagemcardmenuinteresse5,
+.imgagemcardmenuinteresse6,
+.imgagemcardmenuinteresse7,
+.imgagemcardmenuinteresse8,
+.imgagemcardmenuinteresse9,
+.imgagemcardmenuinteresse10,
+.imgagemcardmenuinteresse11,
+.imgagemcardmenuinteresse12 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.imgagemcardmenuinteresse1 {
+    background-image: url('./img/Eu/Captura\ de\ tela\ 2024-10-23\ 151710.png');
+}
+
+.imgagemcardmenuinteresse2 {
+    background-image: url('./img/Eu/Captura\ de\ tela\ 2024-10-23\ 151735.png');
+}
+
+.imgagemcardmenuinteresse3 {
+    background-image: url('./img/Eu/Captura\ de\ tela\ 2024-10-23\ 151811.png');
+}
+
+.imgagemcardmenuinteresse4 {
+    background-image: url('./img/Eu/edu.jpg');
+}
+
+.imgagemcardmenuinteresse5 {
+    background-image: url('./img/Eu/ESTHER.png');
+}
+
+.imgagemcardmenuinteresse6 {
+    background-image: url('./img/Eu/IMG_20201209_142848125.jpg');
+}
+
+.imgagemcardmenuinteresse7 {
+    background-image: url('./img/Eu/IMG_20210920_144101949.jpg');
+}
+
+.imgagemcardmenuinteresse8 {
+    background-image: url('./img/Eu/IMG_20240522_111802_152.jpg');
+}
+
+.imgagemcardmenuinteresse9 {
+    background-image: url('./img/Eu//IMG_20240629_225852_635.jpg');
+}
+
+.imgagemcardmenuinteresse10 {
+    background-image: url('./img/Eu/Captura\ de\ Tela\ 352.png');
+}
+
+.imgagemcardmenuinteresse11 {
+    background-image: url('./img/Eu/Captura\ de\ Tela\ 353.png');
+}
+
+.imgagemcardmenuinteresse12 {
+    background-image: url('./img/Eu/');
+}
+
+.efeitocardmeuinteresse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+    cursor: default;
+    text-align: center;
+    animation: sobremimcards 60s;
+}
+
+.efeitocardmeuinteresse:hover {
+    background-color: rgba(0, 0, 0, 0.695);
+    color: white;
+    transition: 200ms;
+    backdrop-filter: blur 1.0;
+}
+
+.paidetodospost {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.posts {
+    width: 80%;
+    height: 20%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.postconteudo {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.conteudopost {
+    height: 280px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 0 0 1rem;
+}
+
+.conteudoposth1,
+.conteudoposth2 {
+    margin: 0 0 1rem 0;
+}
+
+.postconteudo>img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+.insta {
+    width: 70px;
+    height: 70px;
+    background-image: url('./img/icone/instagram.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: transform 200ms;
+}
+
+.insta:hover {
+    transform: scale(1.1);
+}
+
+/* MEDIA HOME */
+
+@media screen and (max-width: 850px) {
+    .fru1 {
+        background-color: rgba(255, 255, 255, 0);
+        height: 0;
+        width: 0;
+    }
+
+    .efeito>h1 {
+        margin: 1rem 0;
+    }
+
+    .efeito>img {
+        margin: 3rem 0 0 0;
+        width: 235px;
+        height: 400px;
+        filter: drop-shadow(1px 1px 5px black)
+    }
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .iconenoticias2 {
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .iconenoticias {
+        margin: 3rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .postconteudo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .postconteudo>img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .conteudopost {
+        margin: 1rem 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .efeito {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #myVideo {
+        height: 700px;
+    }
+
+    .logog {
+        height: 600px;
+    }
+
+    .conteudopaisobre {
+        padding: 10%;
+    }
+
+    .meuinteressepai {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardmeuinteresse {
+        width: 100%;
+    }
+
+    .cardmeuinteresse:hover {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    nav {
+        background-color: black;
+        display: flex;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .linha-nav {
+        width: 0;
+        height: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    nav>a {
+        margin: 0;
+    }
+
+    .navh2 {
+        margin: 0.8rem 0;
+    }
+
+    #myVideo {
+        height: 850px;
+    }
+
+    .post,
+    .post2,
+    .post3 {
+        background-size: 100% 100%;
+        width: 90%;
+    }
+}
+
+@media (min-resolution: 2dppx) {
+    .filtropost {
+        background-color: rgba(0, 0, 0, 0.736);
+        color: white;
+    }
+}
