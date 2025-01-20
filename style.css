@@ -459,24 +459,6 @@ footer {
     justify-content: center;
 }
 
-.iconesfooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.instagramfooter,.linkedinfooter{
-    width: 70px;
-    margin: 1rem;
-    transition: transform 200ms;
-}
-
-.instagramfooter:hover,.linkedinfooter:hover{
-    transform:scale(1.05);
-}
-
 /* footer>img{
     width: 300px;
 }
