@@ -505,9 +505,45 @@ footer {
     color: white;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.redesSociaisfooter{
+    display: flex;
+    margin:1rem;
+}
+
+.imagemFooter{
+    background-image: url('./img/logosemfundo.png');
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.instagramAmai-vos{
+    background-image: url('./img/icone/logotipo-do-instagram.png');
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    filter: invert(100%);
+    transition: 200ms;
+}
+
+.instagramAmai-vos:hover{
+    transform: scale(1.1);
 }
 
 /* footer>img{
@@ -1062,209 +1098,6 @@ strong {
 .noticiaspart4>h1,
 strong {
     font-weight: bold;
-}
-
-/* SOBRE MIM */
-
-.introducaosobremim {
-    background-color: rgb(05, 05, 05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 10%;
-    text-align: center;
-
-}
-
-.introducaosobremim>img {
-    width: 300px;
-    border-radius: 50%;
-}
-
-.introducaosobremim>h1,
-h2 {
-    margin: 3rem 0;
-
-}
-
-.meuinteressepai {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: stretch;
-}
-
-
-
-.cardmeuinteresse {
-    width: 50%;
-    height: 14rem;
-    /*margin: 0.1rem;*/
-    transition: width 200ms;
-}
-
-.cardmeuinteresse:hover {
-    width: 60%;
-}
-
-.cardmeuinteresse>img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.imgagemcardmenuinteresse1,
-.imgagemcardmenuinteresse2,
-.imgagemcardmenuinteresse3,
-.imgagemcardmenuinteresse4,
-.imgagemcardmenuinteresse5,
-.imgagemcardmenuinteresse6,
-.imgagemcardmenuinteresse7,
-.imgagemcardmenuinteresse8,
-.imgagemcardmenuinteresse9,
-.imgagemcardmenuinteresse10,
-.imgagemcardmenuinteresse11,
-.imgagemcardmenuinteresse12 {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: 100%;
-    object-fit: cover;
-}
-
-.imgagemcardmenuinteresse1 {
-    background-image: url('./img/Eu/Captura\ de\ tela\ 2024-10-23\ 151710.png');
-}
-
-.imgagemcardmenuinteresse2 {
-    background-image: url('./img/Eu/Captura\ de\ tela\ 2024-10-23\ 151735.png');
-}
-
-.imgagemcardmenuinteresse3 {
-    background-image: url('./img/Eu/Captura\ de\ tela\ 2024-10-23\ 151811.png');
-}
-
-.imgagemcardmenuinteresse4 {
-    background-image: url('./img/Eu/edu.jpg');
-}
-
-.imgagemcardmenuinteresse5 {
-    background-image: url('./img/Eu/ESTHER.png');
-}
-
-.imgagemcardmenuinteresse6 {
-    background-image: url('./img/Eu/IMG_20201209_142848125.jpg');
-}
-
-.imgagemcardmenuinteresse7 {
-    background-image: url('./img/Eu/IMG_20210920_144101949.jpg');
-}
-
-.imgagemcardmenuinteresse8 {
-    background-image: url('./img/Eu/IMG_20240522_111802_152.jpg');
-}
-
-.imgagemcardmenuinteresse9 {
-    background-image: url('./img/Eu//IMG_20240629_225852_635.jpg');
-}
-
-.imgagemcardmenuinteresse10 {
-    background-image: url('./img/Eu/Captura\ de\ Tela\ 352.png');
-}
-
-.imgagemcardmenuinteresse11 {
-    background-image: url('./img/Eu/Captura\ de\ Tela\ 353.png');
-}
-
-.imgagemcardmenuinteresse12 {
-    background-image: url('./img/Eu/');
-}
-
-.efeitocardmeuinteresse {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    color: rgba(255, 255, 255, 0);
-    align-items: center;
-    justify-content: center;
-    transition: 200ms;
-    cursor: default;
-    text-align: center;
-    animation: sobremimcards 60s;
-}
-
-.efeitocardmeuinteresse:hover {
-    background-color: rgba(0, 0, 0, 0.695);
-    color: white;
-    transition: 200ms;
-    backdrop-filter: blur 1.0;
-}
-
-.paidetodospost {
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.posts {
-    width: 80%;
-    height: 20%;
-    margin: 3rem 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.postconteudo {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    margin: 1rem 0;
-}
-
-.conteudopost {
-    height: 280px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 0 0 0 1rem;
-}
-
-.conteudoposth1,
-.conteudoposth2 {
-    margin: 0 0 1rem 0;
-}
-
-.postconteudo>img {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-}
-
-
-.insta {
-    width: 70px;
-    height: 70px;
-    background-image: url('./img/icone/instagram.png');
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    transition: transform 200ms;
-}
-
-.insta:hover {
-    transform: scale(1.1);
 }
 
 /* MEDIA HOME */
