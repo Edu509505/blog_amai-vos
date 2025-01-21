@@ -390,63 +390,114 @@ main {
 .part4 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.postpai {
-    width: 75%;
-    display: flex;
-    justify-content: center;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.informacoesfinaisparte4pai {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 3rem 0;
+
 }
 
-.textofiltro {
+.informacoesfinaisparte4pai>h2 {
     margin: 0;
+    padding: 0;
 }
 
-.post,
-.post2,
-.post3 {
-    transition: 200ms;
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
+.informacoesfinaisparte4paiimg {
+    width: 40%;
+    height: 500px;
+    background-image: url('./img/grupo.png');
     background-position: center;
-    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px 0 50px 0;
+    margin: 0 1rem;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.informacoespart4 {
+    width: 50%;
+    margin: 0 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoespart4>h2 {
     margin: 1rem;
 }
 
-.post {
-    background-image: url('./img/post/pedrolessa.png');
-}
-
-.post2 {
-    background-image: url('./img/post/UAWEEK.png');
-}
-
-.post3 {
-    background-image: url('./img/post/14JUL.png');
-}
-
-.filtropost {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    text-align: center;
+form {
     display: flex;
-    align-items: center;
-    color: rgba(255, 255, 255, 0);
-    transition: color, background-color 200ms;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
 }
 
-.filtropost:hover {
-    background-color: rgba(0, 0, 0, 0.736);
+input {
+    width: 98%;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border: none;
+    /* Remove as linhas pretas ao redor */
+    outline: none;
+    /* Remove a borda de foco ao clicar no campo */
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
     color: white;
+}
+
+label {
+    margin: 1rem 0 0.2rem 0;
+}
+
+
+
+textarea {
+    width: 98%;
+    resize: none;
+    border: none;
+    /* Remove as linhas pretas ao redor */
+    outline: none;
+    /* Remove a borda de foco ao clicar no campo */
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    color: white;
+}
+
+button {
+    margin: 1rem 0;
+    background-color: rgb(0, 115, 255);
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    /* Remove as linhas pretas ao redor */
+    outline: none;
+    /* Remove a borda de foco ao clicar no campo */
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -1248,6 +1299,11 @@ h2 {
 
     .iconenoticias {
         margin: 3rem 0 0 0;
+    }
+    .informacoesfinaisparte4paiimg {
+        width: 0;
+        height: 0;
+        margin: 0;
     }
 }
 
